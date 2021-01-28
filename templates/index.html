@@ -1,8 +1,54 @@
 <html>
   <head>
-    <title>Face expression recognition</title>
-  </head>
-  <body>
+  <title>Face expression recognition</title>
+  <style>
+.button {
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #4CAF50;
+}
+
+.button1:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.button2 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #008CBA;
+}
+
+.button2:hover {
+  background-color: #008CBA;
+  color: white;
+}
+
+ </style>
+</head>
+
+<body>
+
+<h1>Two button for the choice</h1>
+
+<button class="button button1"onclick="alert('Camera will start!')">Live</button>
+<button class="button button2"onclick="alert('Enter the file!')">Recorded</button>
+ 
     <img id="bg" width=1200px height=900px src="{{ url_for('video_feed') }}">
+
   </body>
 </html>
+
